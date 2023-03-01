@@ -29,11 +29,11 @@
 ### How to use:
 
 #### Clone this repository, navigate to the project and type the following commands:
-##### Install requirements: 'pip install -r requirements.txt'
-##### Configure and export your API key with [these](https://cs50.harvard.edu/x/2023/) instructions
-##### Run command 'flask run'.
-##### Click on the link inside the terminal to reach the website.
-##### Now register for a new account to create your own stock portfolio.
+1. Install requirements: 'pip install -r requirements.txt'
+2. Configure and export your API key with [these](https://cs50.harvard.edu/x/2023/) instructions
+3. Run command 'flask run'.
+4. Click on the link inside the terminal to reach the website.
+5. Now register for a new account to create your own stock portfolio.
 
 #
 
