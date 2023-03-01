@@ -1,6 +1,6 @@
 ## CS50 week 9's problem set solution to finance 
 
-## Finance is a full-stack web application via which one could manage portfolios of stocks.
+#### Finance is a full-stack web application via which one could manage portfolios of stocks.
 
 # 
 
