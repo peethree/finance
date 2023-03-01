@@ -8,17 +8,17 @@
 
 # 
   
-  ##### index: shows the user's stock portfolio
+   * index: shows the user's stock portfolio
   
-  ##### buy: the user is able to buy stocks given adequate funds
+   * buy: the user is able to buy stocks given adequate funds
   
-  ##### history: shows history of transactions made by the user
+   * history: shows history of transactions made by the user
   
-  ##### quote: gets the stock quote for the given stock
+   * quote: gets the stock quote for the given stock
   
-  ##### register: registers the user, hashes password and inserts new user into a database
+   * register: registers the user, hashes password and inserts new user into a database
   
-  ##### sell: showing the current stock the user owns and is able to sell, update database in case of a sale
+   * sell: showing the current stock the user owns and is able to sell, update database in case of a sale
   
 #   
   
