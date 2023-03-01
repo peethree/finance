@@ -22,4 +22,5 @@ Functionality:
 Incorporates Python code, SQL, Flask with session authentication, HTML and Bootstrap 
   
 
-"""Note that the functions in helpers.py are not my work, as well as the log-in and -out functions. Starter code ©2022 Harvard, David J. Malan"""
+"""Note that the functions in helpers.py are not my work, as well as the log-in and -out functions."""
+""Starter code ©2022 Harvard, David J. Malan""
