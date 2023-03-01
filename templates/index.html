@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+<table class="table table-borderless table-striped ">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>TOTAL</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for stock in stockinfo %}
+        <tr>
+            {% filter upper %}
+            <td>{{ stock["symbol"] }}</td>
+            {% endfilter %}
+            <td>{{ stock["name"] }}</td>
+            <td>{{ stock["SUM(shares)"] }}</td>
+            <td>{{ usd(stock["price"]) }}</td>
+            <td>{{ usd(stock["SUM(shares)"] * stock["price"]) }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan = 3></td>
+            <td><strong>Cash</strong></td>
+            <td>{{ usd(hardcash) }}</td>
+        </tr>
+        <tr>
+            <td colspan = 3></td>
+            <td><strong>Total</strong></td>
+            <td>{{ usd(total)  }}</td>
+        </tr>
+    </tfoot>
+</table>
+
+{% endblock %}
+
+
+

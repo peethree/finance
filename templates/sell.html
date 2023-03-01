@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <div class="mb-3">
+            <select class="form-select mx-auto w-auto" name="symbol">
+                <option disabled selected>Select a stock to sell</option>
+                <!-- loop through the shares the user has and make options for each stock -->
+                {% for stock in stocksforsale %}
+                {% filter upper %}
+                    <option>{{ stock["symbol"] }}</option>
+                {% endfilter %}
+                {% endfor %}
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" id="shares" name="shares" placeholder="amount" type="text" step="any" min="1">
+        </div>
+        <div>
+            <button class="btn btn-primary" type="submit">Sell</button>
+        </div>
+    </form>
+{% endblock %}

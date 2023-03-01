@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<!-- show the user's stock history (including stock’s symbol, the (purchase or sale) price, the number of shares bought or sold, and the date and time at which the transaction occurred) -->
+<table class="table table-borderless table-striped ">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Shares</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for stock in stockhistory %}
+        <tr>
+            {% filter upper %}
+            <td>{{ stock["symbol"] }}</td>
+            {% endfilter %}
+            <td>{{ stock["Type"] }}</td>
+            <td>{{ usd(stock["price"]) }}</td>
+            <td>{{ stock["shares"] }}</td>
+            <td>{{ stock["time"] }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
+
+
+
