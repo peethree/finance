@@ -29,12 +29,11 @@
 ### How to use:
 
 #### Clone this repository, navigate to the project and type the following commands:
-##### Activate a virtual environment: 'python3 -m venv .venv' then select the virtual environment as the active workspace
-##### Install dependencies: 'pip install -r requirements.txt'
-##### Run command 'export FLASK_APP=application.py' to set the Flask environment variable
+##### Install requirements: 'pip install -r requirements.txt'
 ##### Configure and export your API key with [these](https://cs50.harvard.edu/x/2023/) instructions
-##### Run command 'flask run' to open on localhost
-##### When the finance site opens in your browser, register for a new account to create your own stock portfolio
+##### Run command 'flask run'.
+##### Click on the link inside the terminal to reach the website.
+##### Now register for a new account to create your own stock portfolio.
 
 #
 
