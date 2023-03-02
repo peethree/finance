@@ -37,5 +37,5 @@
 
 #
 
-###### """Note that the functions in helpers.py are not my work, as well as the log-in and -out functions."""
+###### """Note that the functions in helpers.py are not my work, nor is layout.html, as well as the log-in and -out functions."""
 ###### ""Starter code ©2022 Harvard, David J. Malan""
